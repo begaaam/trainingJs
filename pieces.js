@@ -23,16 +23,14 @@ const descriptionElement = document.createElement("p");
 descriptionElement.innerText = article.description ?? "Pas de description pour le moment.";
 
 const stockElement = document.createElement("p");
-stockElement.innerText = article.disponibilite ? "En stock" : "Rupture de stock";
+stockElement.innerText = article.diponilite ? "En stock" : "Rupture de stock";
 
 
     //Rattachement de nos balises au DOM 
     const sectionFiches = document.querySelector(".fiches");
          //ajout des elts au parent
-         sectionFiches.appendChild(imageElement);
-         sectionFiches.appendChild(nomElement);
-         sectionFiches.appendChild(prixElement);
-         sectionFiches.appendChild(categorieElement);
-         //ajout des ellts au DOM pour l'exercice 
-         sectionFiches.appendChild(descriptionElement);
-         sectionFiches.appendChild(stockElement);
+         sectionFiches.append(imageElement);
+         sectionFiches.append(nomElement);
+         sectionFiches.append(prixElement);
+         sectionFiches.append(categorieElement);
+         
